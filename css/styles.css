@@ -53,10 +53,9 @@
     gap: 0.7rem;
   }
   .nav-logo img {
-    height: 52px;
+    height: 95px;
     width: auto;
     display: block;
-    background: var(--white);
     padding: 6px 10px;
     border-radius: 3px;
   }
