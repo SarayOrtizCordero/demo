@@ -1,0 +1,10 @@
+# Editor / tooling config (not part of the website)
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local dev servers / logs
+node_modules/
+*.log

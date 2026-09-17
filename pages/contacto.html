@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Julieta Davolos Negocios Inmobiliarios</title>
+<meta name="description" content="Contactá a Julieta Davolos Negocios Inmobiliarios: WhatsApp, teléfono, mail y oficina en Belén de Escobar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../favicon.png">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav" class="scrolled">
+  <a href="../index.html" class="nav-logo"><img src="../assets/images/logo-icon.png" alt="Julieta Davolos"> Julieta Davolos</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="propiedades.html">Propiedades</a></li>
+    <li><a href="emprendimientos.html">Emprendimientos</a></li>
+    <li><a href="nosotros.html">Nosotros</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+  <a href="contacto.html" class="nav-cta">Solicitar Consulta</a>
+  <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV OVERLAY -->
+<div class="nav-mobile" id="navMobile" role="navigation" aria-label="Menú principal móvil">
+  <a href="../index.html">Inicio</a>
+  <a href="propiedades.html">Propiedades</a>
+  <a href="emprendimientos.html">Emprendimientos</a>
+  <a href="nosotros.html">Nosotros</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="contacto.html" class="nav-cta-mobile">Solicitar Consulta</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('../assets/images/propiedades/8694115/2.jpg');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="eyebrow">Consulta Privada</span>
+    <h1>Hablemos de tu <em>próximo hogar.</em></h1>
+    <div class="breadcrumb"><a href="../index.html">Inicio</a> &nbsp;/&nbsp; Contacto</div>
+  </div>
+</section>
+
+<!-- INFO STRIP -->
+<div class="contact-info-strip">
+  <div class="contact-info-item">
+    <strong>Teléfono</strong>
+    <a href="tel:+5491165185675">(011) 6518-5675</a>
+  </div>
+  <div class="contact-info-item">
+    <strong>WhatsApp</strong>
+    <a href="https://api.whatsapp.com/send?phone=5491165185675&text=Hola%20Julieta%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener">+54 9 11 6518-5675</a>
+  </div>
+  <div class="contact-info-item">
+    <strong>Mail</strong>
+    <a href="mailto:julieta@jdnegociosinmobiliarios.com">julieta@jdnegociosinmobiliarios.com</a>
+  </div>
+  <div class="contact-info-item">
+    <strong>Oficina</strong>
+    <span>Belgrano 689, 1º "E" — Edificio Belgrano Green, Belén de Escobar</span>
+  </div>
+</div>
+
+<!-- CONTACT / FORM -->
+<section class="contact-section">
+  <div class="contact-left">
+    <div class="contact-left-overlay">
+      <h2>Empezá tu<br><em>búsqueda hoy.</em></h2>
+      <div class="divider"></div>
+      <p>Nuestros asesores están disponibles para consultas privadas, en persona, por WhatsApp o videollamada. Respondemos en menos de 24 horas.</p>
+    </div>
+  </div>
+  <div class="contact-right">
+    <span class="eyebrow">Consulta Privada</span>
+    <form onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">Nombre</label>
+          <input type="text" id="fname" placeholder="Nombre">
+        </div>
+        <div class="form-group">
+          <label for="lname">Apellido</label>
+          <input type="text" id="lname" placeholder="Apellido">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Mail</label>
+        <input type="email" id="email" placeholder="ejemplo@gmail.com">
+      </div>
+      <div class="form-group">
+        <label for="phone">Celular</label>
+        <input type="tel" id="phone" placeholder="+54 11 0000-0000">
+      </div>
+      <div class="form-group">
+        <label for="intent">Estoy interesado en</label>
+        <select id="intent">
+          <option value="">Seleccioná tu objetivo</option>
+          <option>Comprar una propiedad</option>
+          <option>Invertir en inmobiliaria</option>
+          <option>Alquilar una propiedad</option>
+          <option>Vender mi propiedad</option>
+          <option>Tasar mi propiedad</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="budget">Presupuesto estimado</label>
+        <select id="budget">
+          <option value="">Seleccioná un rango</option>
+          <option>Hasta USD 150.000</option>
+          <option>USD 150.000 – USD 300.000</option>
+          <option>USD 300.000 – USD 500.000</option>
+          <option>Más de USD 500.000</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Contanos tu visión</label>
+        <textarea id="message" placeholder="Describí lo que estás buscando..."></textarea>
+      </div>
+      <button type="submit" class="form-submit" id="submitBtn">Solicitar Consulta</button>
+    </form>
+    <p id="form-success" style="display:none; margin-top:1.2rem; font-size:0.82rem; color:#4A6B5A; letter-spacing:0.05em;">
+      ✓ Gracias — un miembro de nuestro equipo se va a comunicar con vos en menos de 24 horas.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="logo">Julieta Davolos</span>
+      <p>Negocios inmobiliarios en Belén de Escobar y Gran Buenos Aires. La confianza ni se compra ni se vende. Sencillamente se gana.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/julietanegociosinmobiliarios" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg></a>
+        <a href="https://www.instagram.com/julietanegociosinmobiliarios/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.21.6 1.76 1.15.5.5.9 1.1 1.15 1.76.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.13s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.76 4.9 4.9 0 0 1-1.76 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.13-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.76-1.15 4.9 4.9 0 0 1-1.15-1.76c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.21 1.15-1.76A4.9 4.9 0 0 1 5.44.54C6.08.29 6.81.12 7.87.07 8.94.02 9.28 0 12 0Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm5.2-8.4a1.17 1.17 0 1 0 0-2.34 1.17 1.17 0 0 0 0 2.34Z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Propiedades</h4>
+      <ul>
+        <li><a href="propiedades.html?filtro=venta">En Venta</a></li>
+        <li><a href="propiedades.html?filtro=alquiler">En Alquiler</a></li>
+        <li><a href="propiedades.html?filtro=terreno">Terrenos</a></li>
+        <li><a href="emprendimientos.html">Emprendimientos</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="nosotros.html">Quiénes Somos</a></li>
+        <li><a href="nosotros.html#proceso">Nuestro Proceso</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="tel:+5491165185675">(011) 6518-5675</a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=5491165185675" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="mailto:julieta@jdnegociosinmobiliarios.com">julieta@jdnegociosinmobiliarios.com</a></li>
+        <li><span>Belgrano 689, 1º "E" — Belén de Escobar</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Julieta Davolos Negocios Inmobiliarios. Martillera y Corredora Pública — CMZC567 / CUCICBA 8996.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Política de Privacidad</a>
+      <a href="#">Términos de Uso</a>
+    </div>
+  </div>
+</footer>
+<script>window.SITE_BASE = '../';</script>
+<script src="../js/script.js"></script>
+</body>
+</html>

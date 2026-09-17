@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emprendimientos — Julieta Davolos Negocios Inmobiliarios</title>
+<meta name="description" content="Emprendimientos y barrios privados de Julieta Davolos Negocios Inmobiliarios: Puertos del Lago, El Cantón, San Matías, Palermo, Colegiales, Villa del Parque y Montevideo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../favicon.png">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav" class="scrolled">
+  <a href="../index.html" class="nav-logo"><img src="../assets/images/logo-icon.png" alt="Julieta Davolos"> Julieta Davolos</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="propiedades.html">Propiedades</a></li>
+    <li><a href="emprendimientos.html">Emprendimientos</a></li>
+    <li><a href="nosotros.html">Nosotros</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+  <a href="contacto.html" class="nav-cta">Solicitar Consulta</a>
+  <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV OVERLAY -->
+<div class="nav-mobile" id="navMobile" role="navigation" aria-label="Menú principal móvil">
+  <a href="../index.html">Inicio</a>
+  <a href="propiedades.html">Propiedades</a>
+  <a href="emprendimientos.html">Emprendimientos</a>
+  <a href="nosotros.html">Nosotros</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="contacto.html" class="nav-cta-mobile">Solicitar Consulta</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('../assets/images/emprendimientos/61971.jpg');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="eyebrow">Desarrollos y Barrios Privados</span>
+    <h1>Nuestros <em>emprendimientos</em></h1>
+    <div class="breadcrumb"><a href="../index.html">Inicio</a> &nbsp;/&nbsp; Emprendimientos</div>
+  </div>
+</section>
+
+<!-- EMPRENDIMIENTOS GRID -->
+<section class="properties-page">
+  <div class="properties-page-header fade-up">
+    <div class="results-count">Barrios privados en Escobar, desarrollos en Palermo, Colegiales, Villa del Parque y Montevideo</div>
+  </div>
+
+  <div class="emprendimiento-grid">
+
+    <div class="emprendimiento-card fade-up" onclick="openEmprendimientoModal('puertosdellago')">
+      <div class="img-wrap"><img src="../assets/images/emprendimientos/61971.jpg" alt="Puertos del Lago"></div>
+      <div class="card-body">
+        <div class="card-location">📍 Puertos del Lago, Escobar</div>
+        <div class="card-name">Puertos del Lago</div>
+        <div class="card-desc">Un verdadero cambio en tu calidad de vida: seguridad, tranquilidad y contacto con la naturaleza sin resignar infraestructura. Acceso directo desde Panamericana. Lotes, casas, departamentos, townhouses, hotel y oficinas.</div>
+        <div class="tag-row">
+          <span>Al lago</span><span>Club House</span><span>Gimnasio</span><span>Cancha de Tenis</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-entrega">Barrio privado</span>
+          <span class="card-link">Ver más →</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="emprendimiento-card fade-up" onclick="openEmprendimientoModal('elcanton')">
+      <div class="img-wrap"><img src="../assets/images/emprendimientos/45786.jpg" alt="El Cantón Barrio Privado"></div>
+      <div class="card-body">
+        <div class="card-location">📍 El Cantón, Escobar (Maschwitz)</div>
+        <div class="card-name">El Cantón Barrio Privado</div>
+        <div class="card-desc">Ubicado en Maschwitz, Km 45 de Panamericana. Desarrollado sobre 500 hectáreas, compuesto por 4 barrios: Norte, Islas, Golf y Puerto. Lotes de 800 m² promedio, el 65% con vista a lagunas internas.</div>
+        <div class="tag-row">
+          <span>Al lago</span><span>Cancha de Golf</span><span>Club House</span><span>Seguridad 24hs</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-entrega">Barrio privado</span>
+          <span class="card-link">Ver más →</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="emprendimiento-card fade-up" onclick="openEmprendimientoModal('sanmatias')">
+      <div class="img-wrap"><img src="../assets/images/emprendimientos/45782.jpg" alt="Barrio Privado San Matías"></div>
+      <div class="card-body">
+        <div class="card-location">📍 San Matías, Escobar</div>
+        <div class="card-name">Barrio Privado San Matías</div>
+        <div class="card-desc">Zona de antiguas quintas residenciales sobre las barrancas del río Luján, con añosas arboledas. Más de 2.000 árboles de 120 especies. 200 hectáreas divididas en cinco sectores con dos grandes lagunas.</div>
+        <div class="tag-row">
+          <span>Al lago</span><span>Pileta climatizada</span><span>Club House</span><span>Seguridad 24hs</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-entrega">Barrio privado</span>
+          <span class="card-link">Ver más →</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="emprendimiento-card fade-up" onclick="openEmprendimientoModal('cabrera')">
+      <div class="img-wrap"><img src="../assets/images/emprendimientos/67389.jpg" alt="Emprendimiento Cabrera, Palermo Hollywood"></div>
+      <div class="card-body">
+        <div class="card-location">📍 Cabrera al 6000, Palermo Hollywood</div>
+        <div class="card-name">Emprendimiento Cabrera</div>
+        <div class="card-desc">Proyecto sustentable en el corazón de Palermo Hollywood. 9 pisos con 18 unidades funcionales, semipisos de 2 ambientes con ventilación cruzada y cocina integrada. Acepta financiación.</div>
+        <div class="tag-row">
+          <span>Apto mascotas</span><span>Apto profesional</span><span>Ascensor</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-entrega">Entrega: Noviembre 2025</span>
+          <span class="card-link">Ver más →</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="emprendimiento-card fade-up" onclick="openEmprendimientoModal('humboldt')">
+      <div class="img-wrap"><img src="../assets/images/emprendimientos/65998.jpg" alt="Emprendimiento Humboldt, Palermo"></div>
+      <div class="card-body">
+        <div class="card-location">📍 Humboldt al 2200, Palermo</div>
+        <div class="card-name">Emprendimiento Humboldt</div>
+        <div class="card-desc">Proyecto premium y sustentable en el corazón de Palermo. 12 pisos, 39 unidades de 1, 2 y 3 ambientes con balcón y cocina integrada. Amenities en altura: SUM con parrilla, terraza y solárium.</div>
+        <div class="tag-row">
+          <span>Hidromasaje</span><span>Solarium</span><span>SUM</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-entrega">En construcción</span>
+          <span class="card-link">Ver más →</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="emprendimiento-card fade-up" onclick="openEmprendimientoModal('colegiales')">
+      <div class="img-wrap"><img src="../assets/images/emprendimientos/57357.jpg" alt="Emprendimiento Colegiales"></div>
+      <div class="card-body">
+        <div class="card-location">📍 Colegiales, CABA</div>
+        <div class="card-name">Emprendimiento Colegiales</div>
+        <div class="card-desc">Edificio a estrenar con amenities, a metros de la estación Colegiales y de las avenidas Cabildo y Federico Lacroze. Departamentos de 1, 2 y 3 ambientes; planta baja comercial y gastronómica.</div>
+        <div class="tag-row">
+          <span>Pileta</span><span>SUM</span><span>Seguridad 24hs</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-entrega">Entrega: Enero 2024</span>
+          <span class="card-link">Ver más →</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="emprendimiento-card fade-up" onclick="openEmprendimientoModal('nazca')">
+      <div class="img-wrap"><img src="../assets/images/emprendimientos/57256.jpg" alt="Emprendimiento Nazca, Villa del Parque"></div>
+      <div class="card-body">
+        <div class="card-location">📍 Villa del Parque, CABA</div>
+        <div class="card-name">Emprendimiento Nazca</div>
+        <div class="card-desc">Desarrollo de 9 pisos con 46 unidades de 2, 3 y 4 ambientes, 26 cocheras y guardado de bicicletas en subsuelo. Muy buena conectividad, cerca de las estaciones Concordia y Nazca.</div>
+        <div class="tag-row">
+          <span>Seguridad 24hs</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-entrega">Entrega: Agosto 2024</span>
+          <span class="card-link">Ver más →</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="emprendimiento-card fade-up" onclick="openEmprendimientoModal('vila')">
+      <div class="img-wrap"><img src="../assets/images/emprendimientos/63796.jpg" alt="Emprendimiento 01 Vila, Montevideo"></div>
+      <div class="card-body">
+        <div class="card-location">📍 Parque Batlle, Montevideo — Uruguay</div>
+        <div class="card-name">Emprendimiento 01 Vila</div>
+        <div class="card-desc">Desarrollo con foco en el concepto de housing: naturaleza, movilidad sustentable y tecnología. Tres bloques independientes enlazados por patios verdes con vegetación autóctona.</div>
+        <div class="tag-row">
+          <span>Parrilla</span><span>Solarium</span><span>SPA</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-entrega">Entrega: Junio 2025</span>
+          <span class="card-link">Ver más →</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="emprendimiento-card fade-up" onclick="openEmprendimientoModal('malvin')">
+      <div class="img-wrap"><img src="../assets/images/emprendimientos/63686.jpg" alt="Nostrum Malvín Torre 2, Montevideo"></div>
+      <div class="card-body">
+        <div class="card-location">📍 Malvín, Montevideo — Uruguay</div>
+        <div class="card-name">Nostrum Malvín Torre 2</div>
+        <div class="card-desc">Torre diseñada por el arquitecto Carlos Ott junto a Carlos Ponce de León Arquitectos. 92 unidades monoambiente, 1, 2 y 3 dormitorios con vistas panorámicas a la rambla.</div>
+        <div class="tag-row">
+          <span>Gimnasio</span><span>Club House</span><span>Zonas Verdes</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-entrega">Entrega: Abril 2025</span>
+          <span class="card-link">Ver más →</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band fade-up">
+  <span class="eyebrow">¿Te interesa alguno de estos proyectos?</span>
+  <h2>Pedí más <em>información.</em></h2>
+  <a href="contacto.html" class="btn-gold">Contactar a Julieta</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="logo">Julieta Davolos</span>
+      <p>Negocios inmobiliarios en Belén de Escobar y Gran Buenos Aires. La confianza ni se compra ni se vende. Sencillamente se gana.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/julietanegociosinmobiliarios" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg></a>
+        <a href="https://www.instagram.com/julietanegociosinmobiliarios/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.21.6 1.76 1.15.5.5.9 1.1 1.15 1.76.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.13s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.76 4.9 4.9 0 0 1-1.76 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.13-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.76-1.15 4.9 4.9 0 0 1-1.15-1.76c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.21 1.15-1.76A4.9 4.9 0 0 1 5.44.54C6.08.29 6.81.12 7.87.07 8.94.02 9.28 0 12 0Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm5.2-8.4a1.17 1.17 0 1 0 0-2.34 1.17 1.17 0 0 0 0 2.34Z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Propiedades</h4>
+      <ul>
+        <li><a href="propiedades.html?filtro=venta">En Venta</a></li>
+        <li><a href="propiedades.html?filtro=alquiler">En Alquiler</a></li>
+        <li><a href="propiedades.html?filtro=terreno">Terrenos</a></li>
+        <li><a href="emprendimientos.html">Emprendimientos</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="nosotros.html">Quiénes Somos</a></li>
+        <li><a href="nosotros.html#proceso">Nuestro Proceso</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="tel:+5491165185675">(011) 6518-5675</a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=5491165185675" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="mailto:julieta@jdnegociosinmobiliarios.com">julieta@jdnegociosinmobiliarios.com</a></li>
+        <li><span>Belgrano 689, 1º "E" — Belén de Escobar</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Julieta Davolos Negocios Inmobiliarios. Martillera y Corredora Pública — CMZC567 / CUCICBA 8996.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Política de Privacidad</a>
+      <a href="#">Términos de Uso</a>
+    </div>
+  </div>
+</footer>
+
+<!-- EMPRENDIMIENTO DETAIL MODAL (shared component) -->
+<div class="modal-overlay" id="propertyModalOverlay" onclick="if(event.target===this) closePropertyModal()">
+  <div class="property-modal">
+    <button class="modal-close" onclick="closePropertyModal()" aria-label="Cerrar">✕</button>
+    <div class="modal-gallery-col">
+      <div class="modal-gallery-main">
+        <img id="modalMainImg" src="" alt="">
+        <button class="modal-nav-arrow prev" onclick="modalPrevImage()" aria-label="Foto anterior">‹</button>
+        <button class="modal-nav-arrow next" onclick="modalNextImage()" aria-label="Foto siguiente">›</button>
+        <div class="modal-img-counter" id="modalImgCounter"></div>
+      </div>
+      <div class="modal-thumbs" id="modalThumbs"></div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-badge-row" id="modalBadgeRow"></div>
+      <div class="modal-location" id="modalLocation"></div>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <div class="modal-meta" id="modalMeta"></div>
+      <div class="modal-tag-row" id="modalTagRow" style="display:none;"></div>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-footer-row">
+        <div>
+          <div class="modal-price" id="modalPrice"></div>
+          <div class="modal-code" id="modalCode"></div>
+        </div>
+        <a class="modal-cta" id="modalCta" href="#" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>window.SITE_BASE = '../';</script>
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Propiedades — Julieta Davolos Negocios Inmobiliarios</title>
+<meta name="description" content="Todas las propiedades en venta y alquiler de Julieta Davolos Negocios Inmobiliarios: casas al agua en El Cantón y Puertos del Lago, departamentos y terrenos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../favicon.png">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav" class="scrolled">
+  <a href="../index.html" class="nav-logo"><img src="../assets/images/logo-icon.png" alt="Julieta Davolos"> Julieta Davolos</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="propiedades.html">Propiedades</a></li>
+    <li><a href="emprendimientos.html">Emprendimientos</a></li>
+    <li><a href="nosotros.html">Nosotros</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+  <a href="contacto.html" class="nav-cta">Solicitar Consulta</a>
+  <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV OVERLAY -->
+<div class="nav-mobile" id="navMobile" role="navigation" aria-label="Menú principal móvil">
+  <a href="../index.html">Inicio</a>
+  <a href="propiedades.html">Propiedades</a>
+  <a href="emprendimientos.html">Emprendimientos</a>
+  <a href="nosotros.html">Nosotros</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="contacto.html" class="nav-cta-mobile">Solicitar Consulta</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('../assets/images/propiedades/6740856.jpg');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="eyebrow">Cartera Completa</span>
+    <h1>Todas las <em>propiedades</em></h1>
+    <div class="breadcrumb"><a href="../index.html">Inicio</a> &nbsp;/&nbsp; Propiedades</div>
+  </div>
+</section>
+
+<!-- PROPERTIES LISTING -->
+<section class="properties-page">
+  <div class="properties-page-header fade-up">
+    <div class="results-count" id="resultsCount">18 propiedades encontradas</div>
+    <div class="filter-tabs" style="margin-bottom:0;">
+      <button class="filter-tab active" data-filter="all" onclick="setTab(this, 'all')">Todas</button>
+      <button class="filter-tab" data-filter="venta" onclick="setTab(this, 'venta')">Venta</button>
+      <button class="filter-tab" data-filter="alquiler" onclick="setTab(this, 'alquiler')">Alquiler</button>
+      <button class="filter-tab" data-filter="departamento" onclick="setTab(this, 'departamento')">Departamentos</button>
+      <button class="filter-tab" data-filter="terreno" onclick="setTab(this, 'terreno')">Terrenos</button>
+    </div>
+  </div>
+
+  <div class="filter-extra fade-up">
+    <div class="fe-group">
+      <label for="zonaFilter">Zona</label>
+      <select id="zonaFilter" onchange="applyZonaFilter()">
+        <option value="all">Todas las zonas</option>
+        <option value="el-canton">El Cantón</option>
+        <option value="puertos-del-lago">Puertos del Lago</option>
+        <option value="san-matias">San Matías</option>
+        <option value="escobar">Escobar</option>
+        <option value="caba">CABA / Palermo</option>
+      </select>
+    </div>
+    <div class="fe-group">
+      <label>Precio (USD)</label>
+      <div class="price-row">
+        <input type="number" id="priceMinFilter" placeholder="Desde">
+        <input type="number" id="priceMaxFilter" placeholder="Hasta">
+      </div>
+    </div>
+    <button class="apply-btn" onclick="applyPriceFilter()">Aplicar</button>
+    <button class="clear-link" onclick="clearFilters()">Limpiar filtros</button>
+  </div>
+
+  <div class="no-results" id="noResults">No se encontraron propiedades para este filtro. Escribinos y te ayudamos a encontrar la ideal.</div>
+
+  <div class="property-grid">
+
+    <!-- Property 1 -->
+    <div class="property-card-sm fade-up" data-op="venta" data-tipo="casa" data-zona="el-canton" data-price="300000" onclick="openPropertyModal('5944012')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/5944012.jpg" alt="Casa en Venta 5 ambientes Barrio El Canton Norte a la laguna">
+        <span class="badge-sm">Nueva Incorporación</span>
+        <span class="op-badge">Venta</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 El Cantón - Norte</div>
+        <div class="card-name">Casa en Venta 5 ambientes Barrio El Cantón Norte a la laguna</div>
+        <div class="card-meta">
+          <span>3 dorm.</span><span>3 baños</span><span>220 m²</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 300.000</span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 2 -->
+    <div class="property-card-sm fade-up" data-op="venta" data-tipo="casa" data-zona="el-canton" data-price="340000" onclick="openPropertyModal('7661682')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/7661682.jpg" alt="Casa a la laguna en Venta El Canton Barrio Norte">
+        <span class="badge-sm">Nueva Incorporación</span>
+        <span class="op-badge">Venta</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 El Cantón - Norte</div>
+        <div class="card-name">Casa a la laguna en Venta El Cantón Barrio Norte</div>
+        <div class="card-meta">
+          <span>3 dorm.</span><span>3 baños</span><span>212 m²</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 340.000</span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 3 -->
+    <div class="property-card-sm fade-up" data-op="venta" data-tipo="casa" data-zona="el-canton" data-price="330000" onclick="openPropertyModal('6740856')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/6740856.jpg" alt="Casa al agua en Venta 5 Ambientes El Canton Barrio Norte">
+        <span class="badge-sm">Destacada</span>
+        <span class="op-badge">Venta</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 El Cantón - Norte</div>
+        <div class="card-name">Casa al agua en Venta 5 Ambientes El Cantón Barrio Norte</div>
+        <div class="card-meta">
+          <span>3 dorm.</span><span>3 baños</span><span>230 m²</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 330.000</span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 4 -->
+    <div class="property-card-sm fade-up" data-op="venta" data-tipo="casa" data-zona="el-canton" data-price="420000" onclick="openPropertyModal('8170318')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/8170318.jpg" alt="Casa a la laguna en Venta 6 Ambientes El Canton Barrio Norte">
+        <span class="badge-sm">Financiación 50%</span>
+        <span class="op-badge">Venta</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 El Cantón - Norte</div>
+        <div class="card-name">Casa a la laguna en Venta — 6 Ambientes, Barrio Norte</div>
+        <div class="card-meta">
+          <span>5 amb.</span><span>281 m²</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 420.000</span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 5 -->
+    <div class="property-card-sm fade-up" data-op="venta" data-tipo="casa" data-zona="el-canton" data-price="350000" onclick="openPropertyModal('5943099')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/5943099.jpg" alt="Hermosa Casa en venta con vista a laguna, Barrio el Canton Norte">
+        <span class="op-badge">Venta</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 El Cantón - Norte</div>
+        <div class="card-name">Hermosa Casa con vista a laguna, Barrio Norte</div>
+        <div class="card-meta">
+          <span>4 amb.</span><span>253 m²</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 350.000</span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 6 -->
+    <div class="property-card-sm fade-up" data-op="venta" data-tipo="casa" data-zona="el-canton" data-price="450000" onclick="openPropertyModal('6713046')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/6713046.jpg" alt="Casa al agua en Venta 5 Ambientes El Canton Barrio Islas">
+        <span class="op-badge">Venta</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 El Cantón - Islas</div>
+        <div class="card-name">Casa al agua — 5 Ambientes, Barrio Islas</div>
+        <div class="card-meta">
+          <span>5 amb.</span><span>Consultar m²</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 450.000</span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 7 -->
+    <div class="property-card-sm fade-up" data-op="venta" data-tipo="casa" data-zona="el-canton" data-price="390000" onclick="openPropertyModal('7596146')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/7596146.jpg" alt="Casa en Venta a la Laguna en El Canton Barrio Islas">
+        <span class="op-badge">Venta</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 El Cantón - Islas</div>
+        <div class="card-name">Casa a la Laguna, Barrio Islas</div>
+        <div class="card-meta">
+          <span>247 m²</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 390.000</span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 8 -->
+    <div class="property-card-sm fade-up" data-op="venta" data-tipo="casa" data-zona="puertos-del-lago" data-price="550000" onclick="openPropertyModal('7149829')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/7149829.jpg" alt="Casa al agua en venta con pileta, Marinas Puertos del Lago">
+        <span class="badge-sm">Con Pileta</span>
+        <span class="op-badge">Venta</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Marinas - Puertos del Lago</div>
+        <div class="card-name">Casa al agua con pileta, 2 dormitorios en suite</div>
+        <div class="card-meta">
+          <span>2 dorm.</span><span>233 m²</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 550.000</span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 9 -->
+    <div class="property-card-sm fade-up" data-op="venta" data-tipo="casa" data-zona="puertos-del-lago" data-price="690000" onclick="openPropertyModal('8694115')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/8694115.jpg" alt="Casa en Venta Puertos del Lago Barrio Muelles">
+        <span class="op-badge">Venta</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Muelles - Puertos del Lago</div>
+        <div class="card-name">Casa en Puertos del Lago, Barrio Muelles</div>
+        <div class="card-meta">
+          <span>4 dorm.</span><span>290 m²</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 690.000</span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 10 -->
+    <div class="property-card-sm fade-up" data-op="venta" data-tipo="casa" data-zona="el-canton" data-price="490000" onclick="openPropertyModal('7162713')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/7162713.jpg" alt="Casa a la laguna en Venta El Canton Barrio Norte">
+        <span class="badge-sm">Destacada</span>
+        <span class="op-badge">Venta</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 El Cantón - Norte</div>
+        <div class="card-name">Casa a la laguna, Barrio Norte</div>
+        <div class="card-meta">
+          <span>4 dorm.</span><span>320 m²</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 490.000</span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 11 -->
+    <div class="property-card-sm fade-up" data-op="venta" data-tipo="casa" data-zona="puertos-del-lago" data-price="405000" onclick="openPropertyModal('8697318')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/8697318.jpg" alt="Casa en Venta Puertos del Lago Barrio Ceibos">
+        <span class="op-badge">Venta</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Ceibos - Puertos del Lago</div>
+        <div class="card-name">Casa en Puertos del Lago, Barrio Ceibos</div>
+        <div class="card-meta">
+          <span>3 dorm.</span><span>288 m²</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 405.000</span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 12 -->
+    <div class="property-card-sm fade-up" data-op="venta" data-tipo="departamento" data-zona="caba" data-price="175000" onclick="openPropertyModal('7552210')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/7552210.jpg" alt="Departamento en Venta 2 Ambientes Palermo Hollywood">
+        <span class="op-badge">Venta</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Palermo Hollywood - CABA</div>
+        <div class="card-name">Departamento 2 Ambientes en Palermo Hollywood</div>
+        <div class="card-meta">
+          <span>2 amb.</span><span>57 m²</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 175.000</span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 13 -->
+    <div class="property-card-sm fade-up" data-op="venta" data-tipo="departamento" data-zona="escobar" data-price="125000" onclick="openPropertyModal('8001070')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/8001070.jpg" alt="Departamento a estrenar 3 ambientes Escobar Complejo Green Boero">
+        <span class="badge-sm">A Estrenar</span>
+        <span class="op-badge">Venta</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Escobar - GBA Zona Norte</div>
+        <div class="card-name">Departamento a estrenar, 3 amb. con cochera</div>
+        <div class="card-meta">
+          <span>3 amb.</span><span>66,9 m²</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 125.000</span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 14 -->
+    <div class="property-card-sm fade-up" data-op="venta" data-tipo="terreno" data-zona="puertos-del-lago" data-price="148000" onclick="openPropertyModal('9087687')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/9087687.jpg" alt="Lote al agua en venta Puertos del Lago Barrio Amarras">
+        <span class="op-badge">Venta</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Amarras - Puertos del Lago</div>
+        <div class="card-name">Lote al agua, Barrio Amarras</div>
+        <div class="card-meta">
+          <span>904,74 m²</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 148.000</span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 15 -->
+    <div class="property-card-sm fade-up" data-op="alquiler" data-tipo="casa" data-zona="san-matias" data-price="1800" onclick="openPropertyModal('9830322')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/9830322.jpg" alt="Casa en Alquiler Anual San Matias con pileta galeria y parrilla">
+        <span class="badge-sm">Alquiler Anual</span>
+        <span class="op-badge">Alquiler</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 San Matías</div>
+        <div class="card-name">Casa en Alquiler Anual | Pileta, Galería y Parrilla</div>
+        <div class="card-meta">
+          <span>3 dorm.</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 1.800<sup>/mes</sup></span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 16 -->
+    <div class="property-card-sm fade-up" data-op="venta" data-tipo="casa" data-zona="puertos-del-lago" data-price="450000" onclick="openPropertyModal('8075015')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/8075015.jpg" alt="Casa estilo moderno en Venta Puertos del Lago Barrio Amarras">
+        <span class="op-badge">Venta</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Amarras - Puertos del Lago</div>
+        <div class="card-name">Casa estilo moderno, Barrio Amarras</div>
+        <div class="card-meta">
+          <span>4 dorm.</span><span>Consultar m²</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 450.000</span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 17 -->
+    <div class="property-card-sm fade-up" data-op="alquiler" data-tipo="casa" data-zona="puertos-del-lago" data-price="1500" onclick="openPropertyModal('5944385')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/5944385.jpg" alt="Casa en Alquiler Anual Puertos del Lago Barrio Acacias">
+        <span class="badge-sm">Alquiler Anual</span>
+        <span class="op-badge">Alquiler</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 Acacias - Puertos del Lago</div>
+        <div class="card-name">Casa en Alquiler Anual, 4 Ambientes, Barrio Acacias</div>
+        <div class="card-meta">
+          <span>4 amb.</span><span>200,96 m²</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 1.500<sup>/mes</sup></span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 18 -->
+    <div class="property-card-sm fade-up" data-op="venta" data-tipo="casa" data-zona="el-canton" data-price="470000" onclick="openPropertyModal('8010167')">
+      <div class="img-wrap">
+        <img src="../assets/images/propiedades/8010167.jpg" alt="Casa a la laguna en venta El Canton Barrio Puerto">
+        <span class="badge-sm">Destacada</span>
+        <span class="op-badge">Venta</span>
+      </div>
+      <div class="card-body">
+        <div class="card-location">📍 El Cantón - Puerto</div>
+        <div class="card-name">Casa a la laguna, Barrio Puerto</div>
+        <div class="card-meta">
+          <span>4 dorm.</span><span>308 m²</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-price">USD 470.000</span>
+          <span class="card-link">Ver detalles →</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band fade-up">
+  <span class="eyebrow">¿No encontraste lo que buscabas?</span>
+  <h2>Contanos qué <em>necesitás.</em></h2>
+  <a href="contacto.html" class="btn-gold">Hacer una consulta</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="logo">Julieta Davolos</span>
+      <p>Negocios inmobiliarios en Belén de Escobar y Gran Buenos Aires. La confianza ni se compra ni se vende. Sencillamente se gana.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/julietanegociosinmobiliarios" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg></a>
+        <a href="https://www.instagram.com/julietanegociosinmobiliarios/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.21.6 1.76 1.15.5.5.9 1.1 1.15 1.76.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.13s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.76 4.9 4.9 0 0 1-1.76 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.13-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.76-1.15 4.9 4.9 0 0 1-1.15-1.76c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.21 1.15-1.76A4.9 4.9 0 0 1 5.44.54C6.08.29 6.81.12 7.87.07 8.94.02 9.28 0 12 0Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm5.2-8.4a1.17 1.17 0 1 0 0-2.34 1.17 1.17 0 0 0 0 2.34Z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Propiedades</h4>
+      <ul>
+        <li><a href="propiedades.html?filtro=venta">En Venta</a></li>
+        <li><a href="propiedades.html?filtro=alquiler">En Alquiler</a></li>
+        <li><a href="propiedades.html?filtro=terreno">Terrenos</a></li>
+        <li><a href="emprendimientos.html">Emprendimientos</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="nosotros.html">Quiénes Somos</a></li>
+        <li><a href="nosotros.html#proceso">Nuestro Proceso</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="tel:+5491165185675">(011) 6518-5675</a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=5491165185675" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="mailto:julieta@jdnegociosinmobiliarios.com">julieta@jdnegociosinmobiliarios.com</a></li>
+        <li><span>Belgrano 689, 1º "E" — Belén de Escobar</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Julieta Davolos Negocios Inmobiliarios. Martillera y Corredora Pública — CMZC567 / CUCICBA 8996.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Política de Privacidad</a>
+      <a href="#">Términos de Uso</a>
+    </div>
+  </div>
+</footer>
+
+<!-- PROPERTY DETAIL MODAL -->
+<div class="modal-overlay" id="propertyModalOverlay" onclick="if(event.target===this) closePropertyModal()">
+  <div class="property-modal">
+    <button class="modal-close" onclick="closePropertyModal()" aria-label="Cerrar">✕</button>
+    <div class="modal-gallery-col">
+      <div class="modal-gallery-main">
+        <img id="modalMainImg" src="" alt="">
+        <button class="modal-nav-arrow prev" onclick="modalPrevImage()" aria-label="Foto anterior">‹</button>
+        <button class="modal-nav-arrow next" onclick="modalNextImage()" aria-label="Foto siguiente">›</button>
+        <div class="modal-img-counter" id="modalImgCounter"></div>
+      </div>
+      <div class="modal-thumbs" id="modalThumbs"></div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-badge-row" id="modalBadgeRow"></div>
+      <div class="modal-location" id="modalLocation"></div>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <div class="modal-meta" id="modalMeta"></div>
+      <div class="modal-tag-row" id="modalTagRow" style="display:none;"></div>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-footer-row">
+        <div>
+          <div class="modal-price" id="modalPrice"></div>
+          <div class="modal-code" id="modalCode"></div>
+        </div>
+        <a class="modal-cta" id="modalCta" href="#" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>window.SITE_BASE = '../';</script>
+<script src="../js/script.js"></script>
+</body>
+</html>

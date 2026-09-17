@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Julieta Davolos — Negocios Inmobiliarios</title>
+<meta name="description" content="Julieta Davolos Negocios Inmobiliarios — propiedades en venta y alquiler en Belén de Escobar, El Cantón, Puertos del Lago y Gran Buenos Aires.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicon.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo"><img src="assets/images/logo-icon.png" alt="Julieta Davolos"> Julieta Davolos</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="pages/propiedades.html">Propiedades</a></li>
+    <li><a href="pages/emprendimientos.html">Emprendimientos</a></li>
+    <li><a href="pages/nosotros.html">Nosotros</a></li>
+    <li><a href="pages/contacto.html">Contacto</a></li>
+  </ul>
+  <a href="pages/contacto.html" class="nav-cta">Solicitar Consulta</a>
+  <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV OVERLAY -->
+<div class="nav-mobile" id="navMobile" role="navigation" aria-label="Menú principal móvil">
+  <a href="index.html">Inicio</a>
+  <a href="pages/propiedades.html">Propiedades</a>
+  <a href="pages/emprendimientos.html">Emprendimientos</a>
+  <a href="pages/nosotros.html">Nosotros</a>
+  <a href="pages/contacto.html">Contacto</a>
+  <a href="pages/contacto.html" class="nav-cta-mobile">Solicitar Consulta</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-headline">
+      <h1>La confianza<br>no se compra,<br><em>se gana.</em></h1>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="num">280+</div>
+        <span class="label">Propiedades en cartera</span>
+      </div>
+      <div class="hero-stat">
+        <div class="num">CUCICBA</div>
+        <span class="label">Matrícula 8996</span>
+      </div>
+      <div class="hero-stat">
+        <div class="num">Escobar</div>
+        <span class="label">Zona norte y GBA</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROPERTIES -->
+<section class="filter-section" id="properties">
+  <div class="filter-header fade-up">
+    <div>
+      <h2 class="section-title">Propiedades<br><em>destacadas</em></h2>
+    </div>
+    <p class="filter-note">Una selección de nuestra cartera actual en El Cantón y Puertos del Lago.</p>
+  </div>
+
+  <!-- Property 1 -->
+  <div class="property-card fade-up" onclick="openPropertyModal('5944012')">
+    <img src="assets/images/propiedades/5944012.jpg" alt="Casa en Venta 5 ambientes Barrio El Canton Norte a la laguna">
+    <div class="property-overlay"></div>
+    <div class="property-badge">Nueva Incorporación</div>
+    <div class="property-info">
+      <div>
+        <div class="property-location">📍 El Cantón - Norte</div>
+        <div class="property-name">Casa en Venta 5 ambientes Barrio El Cantón Norte a la laguna</div>
+        <div class="property-desc">Casa moderna a estrenar con vista plena a la laguna en El Cantón – Norte. Distribuida en dos plantas, con amplio living-comedor, cocina integrada y galería con parrilla. Construcción de calidad con losa radiante, doble vidrio y preinstalación de aire acondicionado.</div>
+        <div class="property-meta">
+          <span><span class="dot-icon">b</span> 3 dorm.</span>
+          <span><span class="dot-icon">⌂</span> 3 baños</span>
+          <span><span class="dot-icon">▣</span> 2 plantas</span>
+          <span><span class="dot-icon">◻</span> 220 m²</span>
+        </div>
+        <div class="property-price"><span>desde</span>USD 300.000</div>
+      </div>
+      <a class="view-btn" href="https://api.whatsapp.com/send?phone=5491165185675&text=Hola%20Julieta%2C%20me%20interesa%20la%20Casa%20en%20Venta%20El%20Cant%C3%B3n%20Norte%20a%20la%20laguna" target="_blank" rel="noopener" onclick="event.stopPropagation()">Consultar</a>
+    </div>
+  </div>
+
+  <!-- Property 2 -->
+  <div class="property-card fade-up" onclick="openPropertyModal('7661682')">
+    <img src="assets/images/propiedades/7661682.jpg" alt="Casa a la laguna en Venta El Canton Barrio Norte">
+    <div class="property-overlay"></div>
+    <div class="property-badge">Nueva Incorporación</div>
+    <div class="property-info">
+      <div>
+        <div class="property-location">📍 El Cantón - Norte</div>
+        <div class="property-name">Casa a la laguna en Venta El Cantón Barrio Norte</div>
+        <div class="property-desc">Casa moderna con vistas a la laguna, ubicada en el Barrio Norte de El Cantón. Living-comedor luminoso con ventanales de alta calidad, cocina completa y galería con parrilla integrada al jardín y a la piscina.</div>
+        <div class="property-meta">
+          <span><span class="dot-icon">b</span> 3 dorm.</span>
+          <span><span class="dot-icon">⌂</span> 3 baños</span>
+          <span><span class="dot-icon">▣</span> 2 plantas</span>
+          <span><span class="dot-icon">◻</span> 212 m²</span>
+        </div>
+        <div class="property-price"><span>desde</span>USD 340.000</div>
+      </div>
+      <a class="view-btn" href="https://api.whatsapp.com/send?phone=5491165185675&text=Hola%20Julieta%2C%20me%20interesa%20la%20Casa%20a%20la%20laguna%20en%20Venta%20El%20Cant%C3%B3n%20Barrio%20Norte" target="_blank" rel="noopener" onclick="event.stopPropagation()">Consultar</a>
+    </div>
+  </div>
+
+  <!-- Property 3 -->
+  <div class="property-card fade-up" onclick="openPropertyModal('6740856')">
+    <img src="assets/images/propiedades/6740856.jpg" alt="Casa al agua en Venta 5 Ambientes El Canton Barrio Norte">
+    <div class="property-overlay"></div>
+    <div class="property-badge">Destacada</div>
+    <div class="property-info">
+      <div>
+        <div class="property-location">📍 El Cantón - Norte</div>
+        <div class="property-name">Casa al agua en Venta 5 Ambientes El Cantón Barrio Norte</div>
+        <div class="property-desc">Casa moderna frente a la laguna en El Cantón Norte. Living-comedor en doble altura, cocina amplia y escritorio. Exterior con galería, parrilla, piscina con borde infinito y muelle propio.</div>
+        <div class="property-meta">
+          <span><span class="dot-icon">b</span> 3 dorm.</span>
+          <span><span class="dot-icon">⌂</span> 3 baños</span>
+          <span><span class="dot-icon">▣</span> 2 plantas</span>
+          <span><span class="dot-icon">◻</span> 230 m²</span>
+        </div>
+        <div class="property-price"><span>desde</span>USD 330.000</div>
+      </div>
+      <a class="view-btn" href="https://api.whatsapp.com/send?phone=5491165185675&text=Hola%20Julieta%2C%20me%20interesa%20la%20Casa%20al%20agua%20en%20Venta%205%20Ambientes%20El%20Cant%C3%B3n%20Barrio%20Norte" target="_blank" rel="noopener" onclick="event.stopPropagation()">Consultar</a>
+    </div>
+  </div>
+
+  <div class="view-all-wrap fade-up">
+    <a href="pages/propiedades.html" class="btn-outline-gold" style="border-color: var(--bark); color: var(--bark);">Ver todas las propiedades</a>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about-section" id="about">
+  <div class="about-image" style="background-image:url('assets/images/propiedades/propiedad-4.jpg');"></div>
+  <div class="about-content">
+    <span class="eyebrow">Nuestra Filosofía</span>
+    <h2>No vendemos casas.<br>Te situamos en <em>tu mundo.</em></h2>
+    <div class="divider"></div>
+    <p>Julieta Davolos Negocios Inmobiliarios ayuda a sus clientes a realizar gestiones inmobiliarias de forma rápida, fácil y segura, manteniendo intacta la confianza que depositan en cada operación. Especialistas en propiedades al agua en El Cantón y Puertos del Lago, con presencia también en Capital Federal y Gran Buenos Aires.</p>
+    <div class="about-features">
+      <div class="about-feature">
+        <strong>Servicio Integral</strong>
+        <span>Acompañamiento en cada etapa de la operación, de la consulta a la firma.</span>
+      </div>
+      <div class="about-feature">
+        <strong>Cartera Curada</strong>
+        <span>Más de 280 propiedades activas en venta y alquiler.</span>
+      </div>
+      <div class="about-feature">
+        <strong>Matrícula Habilitante</strong>
+        <span>Martillera y Corredora Pública — CMZC567 / CUCICBA 8996.</span>
+      </div>
+      <div class="about-feature">
+        <strong>Zona de Cobertura</strong>
+        <span>Belén de Escobar, El Cantón, Puertos del Lago y Gran Buenos Aires.</span>
+      </div>
+    </div>
+    <a href="pages/nosotros.html" class="btn-outline-gold">Conocé más sobre nosotros</a>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="section-header fade-up">
+    <span class="eyebrow">Voces de Clientes</span>
+    <h2 class="section-title">Lo que dicen <em>nuestros clientes</em></h2>
+    <div class="divider" style="margin: 1.5rem auto 0;"></div>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card fade-up">
+      <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+      <p class="testimonial-text">Julieta comprendió lo que buscábamos desde la primera llamada. Nos encontró una casa a la laguna que no sabíamos que buscábamos, y nos acompañó en cada paso con total fluidez.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">MR</div>
+        <div>
+          <div class="author-name">M. y R.</div>
+          <div class="author-role">Compradores en El Cantón Norte</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card fade-up">
+      <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+      <p class="testimonial-text">El nivel de profesionalismo y seguimiento fue extraordinario. Toda la operación, impecable de principio a fin.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">SL</div>
+        <div>
+          <div class="author-name">S. L.</div>
+          <div class="author-role">Clienta de inversión</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card fade-up">
+      <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+      <p class="testimonial-text">Desde la primera visita hasta la firma final, un proceso complejo se volvió simple. Un equipo verdaderamente atento.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">JC</div>
+        <div>
+          <div class="author-name">J. y C.</div>
+          <div class="author-role">Compradores en Puertos del Lago</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band fade-up">
+  <span class="eyebrow">Consulta Privada</span>
+  <h2>Empezá tu <em>búsqueda hoy.</em></h2>
+  <a href="pages/contacto.html" class="btn-gold">Contactar a Julieta</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="logo">Julieta Davolos</span>
+      <p>Negocios inmobiliarios en Belén de Escobar y Gran Buenos Aires. La confianza ni se compra ni se vende. Sencillamente se gana.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/julietanegociosinmobiliarios" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg></a>
+        <a href="https://www.instagram.com/julietanegociosinmobiliarios/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.21.6 1.76 1.15.5.5.9 1.1 1.15 1.76.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.13s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.76 4.9 4.9 0 0 1-1.76 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.13-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.76-1.15 4.9 4.9 0 0 1-1.15-1.76c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.21 1.15-1.76A4.9 4.9 0 0 1 5.44.54C6.08.29 6.81.12 7.87.07 8.94.02 9.28 0 12 0Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm5.2-8.4a1.17 1.17 0 1 0 0-2.34 1.17 1.17 0 0 0 0 2.34Z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Propiedades</h4>
+      <ul>
+        <li><a href="pages/propiedades.html?filtro=venta">En Venta</a></li>
+        <li><a href="pages/propiedades.html?filtro=alquiler">En Alquiler</a></li>
+        <li><a href="pages/propiedades.html?filtro=terreno">Terrenos</a></li>
+        <li><a href="pages/emprendimientos.html">Emprendimientos</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="pages/nosotros.html">Quiénes Somos</a></li>
+        <li><a href="pages/nosotros.html#proceso">Nuestro Proceso</a></li>
+        <li><a href="pages/contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="tel:+5491165185675">(011) 6518-5675</a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=5491165185675" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="mailto:julieta@jdnegociosinmobiliarios.com">julieta@jdnegociosinmobiliarios.com</a></li>
+        <li><span>Belgrano 689, 1º "E" — Belén de Escobar</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Julieta Davolos Negocios Inmobiliarios. Martillera y Corredora Pública — CMZC567 / CUCICBA 8996.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Política de Privacidad</a>
+      <a href="#">Términos de Uso</a>
+    </div>
+  </div>
+</footer>
+
+<!-- PROPERTY DETAIL MODAL -->
+<div class="modal-overlay" id="propertyModalOverlay" onclick="if(event.target===this) closePropertyModal()">
+  <div class="property-modal">
+    <button class="modal-close" onclick="closePropertyModal()" aria-label="Cerrar">✕</button>
+    <div class="modal-gallery-col">
+      <div class="modal-gallery-main">
+        <img id="modalMainImg" src="" alt="">
+        <button class="modal-nav-arrow prev" onclick="modalPrevImage()" aria-label="Foto anterior">‹</button>
+        <button class="modal-nav-arrow next" onclick="modalNextImage()" aria-label="Foto siguiente">›</button>
+        <div class="modal-img-counter" id="modalImgCounter"></div>
+      </div>
+      <div class="modal-thumbs" id="modalThumbs"></div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-badge-row" id="modalBadgeRow"></div>
+      <div class="modal-location" id="modalLocation"></div>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <div class="modal-meta" id="modalMeta"></div>
+      <div class="modal-tag-row" id="modalTagRow" style="display:none;"></div>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-footer-row">
+        <div>
+          <div class="modal-price" id="modalPrice"></div>
+          <div class="modal-code" id="modalCode"></div>
+        </div>
+        <a class="modal-cta" id="modalCta" href="#" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a class="whatsapp-float" href="https://api.whatsapp.com/send?phone=5491165185675&text=Hola%20Julieta%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+  <span class="whatsapp-tooltip">Escribinos por WhatsApp</span>
+  <svg viewBox="0 0 24 24"><path d="M17.47 14.38c-.29-.15-1.7-.84-1.96-.93-.26-.1-.46-.15-.65.15-.2.29-.75.93-.92 1.12-.17.2-.34.22-.63.08-.29-.15-1.22-.45-2.33-1.44-.86-.77-1.44-1.71-1.61-2-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.48.1-.2.05-.36-.02-.51-.08-.15-.65-1.58-.9-2.16-.24-.58-.48-.5-.65-.51h-.56c-.2 0-.51.07-.78.36-.26.29-1.02 1-1.02 2.42 0 1.43 1.04 2.82 1.19 3.01.15.2 2.05 3.13 4.97 4.39.69.3 1.24.48 1.66.61.7.22 1.33.19 1.83.12.56-.08 1.7-.7 1.94-1.37.24-.68.24-1.26.17-1.38-.07-.12-.26-.2-.55-.34Z"/><path d="M12.02 2C6.5 2 2 6.48 2 11.98c0 1.85.5 3.58 1.38 5.08L2 22l5.09-1.34a10.02 10.02 0 0 0 4.93 1.3h.01c5.51 0 10-4.48 10-9.98C22.03 6.48 17.53 2 12.02 2Zm0 18.2h-.01c-1.6 0-3.16-.43-4.53-1.24l-.32-.19-3.02.79.81-2.94-.21-.31a8.23 8.23 0 0 1-1.27-4.33c0-4.53 3.7-8.22 8.25-8.22 2.2 0 4.27.86 5.83 2.42a8.15 8.15 0 0 1 2.41 5.8c0 4.53-3.7 8.22-8.24 8.22Z"/></svg>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
