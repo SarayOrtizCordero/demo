@@ -53,9 +53,12 @@
     gap: 0.7rem;
   }
   .nav-logo img {
-    height: 46px;
+    height: 52px;
     width: auto;
     display: block;
+    background: var(--white);
+    padding: 6px 10px;
+    border-radius: 3px;
   }
   .nav-links {
     display: flex;
@@ -1538,7 +1541,7 @@
     .proceso-section { padding: 3rem 1.5rem; }
     .proceso-steps { grid-template-columns: 1fr; gap: 2.5rem; }
     .contact-info-strip { grid-template-columns: 1fr; padding: 2.5rem 1.5rem; gap: 1.5rem; }
-    .nav-logo img { height: 36px; }
+    .nav-logo img { height: 42px; }
     .quote-intro { padding: 3rem 1.5rem; }
     .property-grid { grid-template-columns: 1fr; }
     .modal-gallery-main { height: 240px; }
